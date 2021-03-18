@@ -1,0 +1,11 @@
+---
+applications:
+  - name: tone.analyzer-luis_gallegos-app
+    buildpacks:
+      - sdk-for-nodejs
+    path: .
+    command: npm run start
+    instances: 1
+    memory: 256M
+    env:
+      NPM_CONFIG_PRODUCTION: false

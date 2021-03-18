@@ -1,5 +1,5 @@
-//Created by Luis David Gallegos Godoy & Jorge Alejandro Dong Llauger
-//Date: 07/03/2021
+//Created by Luis David Gallegos Godoy
+//Date: 17/03/2021
 
 // definimos un puerto por el cual escucharemos peticiones
 const PORT = process.env.PORT || 8080
@@ -41,7 +41,7 @@ app.post('/api/toneAnalyzer', async function(req, res, next) {
       const { result } = await toneAnalyzer.tone(req.body);
       res.json(result);
     } catch (error) {
-      next(error);
+      next(error)
     }
   });
 
