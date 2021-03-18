@@ -1,0 +1,10 @@
+###Pruebas del API
+###
+
+### 
+POST http://localhost:8080/api/toneAnalyzer
+Content-Type: application/json
+
+{
+ "text": " Hello i am a sad person"
+}

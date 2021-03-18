@@ -4,7 +4,8 @@
   "description": "Este repositorio contiene el back-end y el client",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/stompercito/Examen1CN/issues"
   },
-  "homepage": "https://github.com/stompercito/Examen1CN#readme"
+  "homepage": "https://github.com/stompercito/Examen1CN#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  }
 }
