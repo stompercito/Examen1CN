@@ -22,31 +22,35 @@
 
     <script>
 
-
+    
     //submit
     function sub(text1){
 
         console.log(text1);
 
-        setTimeout(function() {
-            var response = httpPost("https://toneanalyzer-luisgallegos-app.mybluemix.net/api/toneAnalyzer");
-            }, 3000);
-            function httpPost(theUrl) {    
-            xmlhttp = new XMLHttpRequest();
-            xmlhttp.setRequestHeader('Content-Type', 'application/json');
-            xmlhttp.open('POST', theUrl);
-                    let textToneJson = {
-                        toneInput: { 
-                            text: text1
-                            }, 
-                        contentLanguage: "EN"
-                    };
-                    xmlhttp.send(JSON.stringify(textToneJson));
-            xmlhttp.onload = function () {
-                var r = xmlhttp.responseText;
-                document.getElementById("h").innerHTML = r;
-            }
+        let textToneJson = {
+            toneInput: { 
+                text: text1
+                }, 
+            contentLanguage: "EN"
         };
+            
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', 'https://toneanalyzer-luisgallegos-app.mybluemix.net/api/toneAnalyzer', true);
+        xhr.setRequestHeader('Content-Type', 'application/json');
+        xhr.send(JSON.stringify(textToneJson));
+        xhr.onload = function() {
+            if (xhr.status === 200) {
+                var info = JSON.parse(xhr.responseText);
+                console.log(info);
+                var r = xhr.responseText;
+                document.getElementById("h").innerHTML = r;
+                
+            } 
+        };
+
+
+
 
     };
 </script>
