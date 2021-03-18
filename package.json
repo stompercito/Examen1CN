@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "Este repositorio contiene el back-end y el client",
   "main": "index.js",
+  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    "server": "nodemon index.js",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",

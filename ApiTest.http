@@ -11,3 +11,14 @@ Content-Type: application/json
         }, 
     "contentLanguage": "EN"
 }
+
+### Prueba de Cloud Foundry
+POST https://toneanalyzer-luisgallegos-app.mybluemix.net/api/toneAnalyzer
+Content-Type: application/json
+
+{
+    "toneInput": { 
+        "text": "I am a sad person because my friend Dong does not want to see may code"
+        }, 
+    "contentLanguage": "EN"
+}
