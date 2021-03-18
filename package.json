@@ -1,0 +1,25 @@
+{
+  "name": "tone_analayzer_front-end",
+  "version": "1.0.0",
+  "description": "Este repositorio contiene el back-end y el client",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stompercito/Examen1CN.git"
+  },
+  "author": "Luis David Gallegos Godoy is709571@iteso.mx",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stompercito/Examen1CN/issues"
+  },
+  "homepage": "https://github.com/stompercito/Examen1CN#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  }
+}
