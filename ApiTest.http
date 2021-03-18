@@ -6,5 +6,8 @@ POST http://localhost:8080/api/toneAnalyzer
 Content-Type: application/json
 
 {
- "text": " Hello i am a sad person"
+    "toneInput": { 
+        "text": "I am a sad person because my friend Dong does not want to see may code"
+        }, 
+    "contentLanguage": "EN"
 }

@@ -36,7 +36,7 @@ app.get('/', function (req, res) {
 });
 
 //Metodo post del api de toneAnalyzer
-pp.post('/api/toneAnalyzer', async function(req, res, next) {
+app.post('/api/toneAnalyzer', async function(req, res, next) {
     try {
       const { result } = await toneAnalyzer.tone(req.body);
       res.json(result);
